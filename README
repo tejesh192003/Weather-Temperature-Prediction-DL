@@ -1,0 +1,33 @@
+# 🌤️ Deep Learning-Based Weather Temperature Prediction
+
+## 📖 Overview
+Accurate weather prediction is critical for applications in real-life processes like disaster management, environmental monitoring, transportation, and agriculture. While classical statistical models often struggle with the multifaceted time dependence of weather data, artificial intelligence and deep learning provide robust solutions. 
+
+This project introduces a time-series deep learning methodology for predicting weather temperatures. By processing historical data through a sliding window procedure, the project evaluates multiple Recurrent Neural Network (RNN) architectures to capture and predict complex temperature trends.
+
+## ✨ Key Features
+* **Time-Series Forecasting:** Utilizes sliding window techniques to prepare sequence data for deep learning models.
+* **Comparative Modeling:** Implements and compares a basic RNN, a conventional LSTM, and a fine-tuned LSTM network.
+* **Extensive Evaluation:** Includes visual comparisons of training histories, actual vs. predicted temperatures, error distributions, and overall metric comparisons.
+* **Interactive Web Interface:** Deploys the best-performing model using **Gradio** for real-time, user-friendly temperature predictions.
+
+## 🛠️ Tech Stack
+* **Language:** Python
+* **Deep Learning Framework:** TensorFlow / Keras
+* **Data Manipulation:** Pandas, NumPy
+* **Machine Learning Tools:** Scikit-learn (MinMaxScaler)
+* **Data Visualization:** Matplotlib, Seaborn
+* **Deployment Interface:** Gradio
+
+## 📂 Repository Structure
+```text
+├── notebooks/
+│   ├── 01_Data_Preprocessing_and_EDA.ipynb   # Data cleaning, normalization, and visualization
+│   └── 02_RNN_LSTM_Modeling.ipynb            # Model building, training, evaluation, and Gradio deployment
+├── models/
+│   ├── rnn_weather_model.keras               # Saved RNN model
+│   ├── lstm_weather_model.keras              # Saved LSTM model
+│   ├── scaler.pkl                            # Saved MinMaxScaler for input normalization
+│   └── config.pkl                            # Model configuration parameters
+├── Project_Report.pdf                        # Comprehensive project documentation
+└── README.md
